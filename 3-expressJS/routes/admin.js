@@ -8,8 +8,9 @@ router.get('/get',(req,res,next)=>{
 })
 
 router.post('/read',(req,res,next)=>{
+    console.log("working...")
     console.log(req.body);
     res.redirect('/')
 })
-module.exports= router
+module.exports = router
 
