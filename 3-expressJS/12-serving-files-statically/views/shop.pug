@@ -1,0 +1,29 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Shop 
+        link(rel="stylesheet", href="/css/main.css")
+    body
+        header.main-header
+            nav.main-header-nav
+                ul.main-header-item-list 
+                    li.item-1
+                        a.active(href="/") Shop 
+                    li.item-2
+                        a(href="/admin/add-product") Add product
+        main 
+            .grid 
+                each product in prods
+
+                    article.card 
+                        header.productTitle
+                            h1.title #{product.title} 
+                            img(src="", alt="")
+                    .content 
+                        h2.price 19.99
+                        p.desc A very interesting book 
+                    .actions 
+                        button.btn Add to cart

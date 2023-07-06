@@ -1,0 +1,4 @@
+MODEL VIEW CONTROLLER
+model: respresents the data in your code
+view: what the user sees as the end result
+controller: binds the model and the view
